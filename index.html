@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reelify UI</title>
+  <style>
+a{
+text-decoration:none;
+color:white;
+}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .phone {
+      width: 319px;
+      height:590px;
+      background-color: #111;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3px 15px 0px 10px;
+    }
+
+    .header h1 {
+    color: transparent;
+  background: linear-gradient(to right,#7f00ff,#e100ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+font-size:32px;
+font-family:Inria Serif;    }
+
+    .header notification {
+    font-size: 1.2em;
+      cursor: pointer;}
+
+   
+
+    .stories {
+      display: flex;
+      padding: 0px 5px 15px 6px;
+      overflow-x:scroll;
+      overflow-y:hidden;
+      scrollbar-width:none; 
+    }
+
+    .stories::-webkit-scrollbar {
+      display: none;     }
+
+    .story {
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .story img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #ff69b4;
+    }
+
+    .story span {
+      display: block;
+      font-size: 0.65em;
+      margin-top: 5px;
+    }
+
+.video
+{
+height:111px;
+width:100%;
+display:flex;
+padding: 0px 0px 0px 0px;
+margin:0px;
+overflow-x:scroll;
+overflow-y:hidden;
+
+}
+ .video::-webkit-scrollbar {
+      display:none;    
+}
+
+
+.video div
+{position:relative;
+margin-right:15px;             
+}
+.pro{
+position: absolute;
+            bottom:30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 43px;
+            height: 43px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color:black;
+}
+.pro img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+}
+    .feed {
+      padding: 10px;
+      flex-grow: 1;
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+
+    .feed::-webkit-scrollbar {
+      display: none;
+    }
+
+    .post {
+      width:100%;
+      border-radius:20%;
+      margin-bottom: 20px;
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .post .info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .post .info img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post .info .username {
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .post .engagement {
+      font-size: 0.8em;
+      color: #aaa;
+      margin-top: 5px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+      background-color: #111;
+    }
+
+    .footer div {
+      text-align: center;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+ 
+
+    .footer div:hover {
+      color: #ff69b4;
+    }
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.reels{
+    height: 65%;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-x:hidden ;
+    overflow-y:scroll;
+}
+.reels::-webkit-scrollbar {
+      display: none;
+}
+
+.container{
+       overflow-x:hidden ;
+    overflow-y:scroll;
+}
+.container::-webkit-scrollbar {
+      display: none;
+}
+.more span{
+font-size:55px;
+}
+  </style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="header">
+    <h1>Reelify</h1>
+    <div><a href="notification.html">🔔</a></div>
+  </div>
+<section class="container">
+  <div class="stories">
+    <div class="story"><a href="story1.html">
+      <img src="img1.jpg" alt="Your story"></a>
+      <span>Your story</span>
+    </div>
+    <div class="story"><a href="story2.html">
+      <img src="img2.jpg" alt="relina_192"></a>
+      <span>relina_192</span>
+    </div>
+<div class="story"><a href="story3.html">
+      <img src="img3.jpeg" alt="Your story"></a>
+      <span>Your story</span>
+    </div>
+    <div class="story"><a href="story4.html">
+      <img src="img4.jpg" alt="semii.gn"></a>
+      <span>semii.gn</span>
+    </div>
+<div class="story"><a href="story5.html">
+      <img src="img5.jpg" alt="semii.gn"></a>
+      <span>semii.gn</span>
+    </div>
+<div class="story"><a href="story6.html">
+      <img src="img6.jpg" alt="Your story"></a>
+      <span>Your story</span>
+    </div>
+<div class="story"><a href="story7.html">
+      <img src="img7.jpg" alt="semii.gn"></a>
+      <span>semii.gn</span>
+    </div>
+<div class="story"><a href="story8.html">
+      <img src="img8.jpg" alt="semii.gn"></a>
+      <span>semii.gn</span>
+    </div>
+
+  </div>
+
+<section class="video">
+<div> <a href="video1.html">
+<img src="img5.jpg" height="90px" width="150px" ></a>
+<div class="pro"><img src="img6.jpg" height="20px" width="60px"></div>
+</div>
+<div> <a href="video2.html">
+<img src="img5.jpg" height="90px" width="150px"></a>
+<div class="pro"><img src="img6.jpg" height="20px" width="60px"></div>
+</div>
+<div><a href="video3.html"> 
+<img src="img5.jpg" height="90px" width="150px"></a>
+<div class="pro"><img src="img6.jpg" height="20px" width="60px"></div>
+</div>
+<div> <a href="video4.html">
+<img src="img5.jpg" height="90px" width="150px"></a>
+<div class="pro"><img src="img6.jpg" height="20px" width="60px"></div>
+</div>
+<div class="more"><a href="more.html"><span>&#10153;</span></a></div>
+</section>
+<div class="feed">
+<section  class="reels">
+     
+    <div class="post">
+      <img src="img9.jpg" alt="Post image">
+<a href="profile1.html">      
+<div class="info">
+        <img src="img9.jpg" alt="User avatar">
+        <div>
+          <span class="username">ms.prin</span>
+        </div>
+      </div></a>
+      <div class="engagement">
+        <p>42.9k ❤️ 323 💬</p>
+        <p>ms.prin_fearless walk...</p>
+      </div>
+    </div>
+  
+
+<div class="post">
+      <img src="img6.jpg" alt="Post image">
+<a href="profile2.html">
+      <div class="info">
+        <img src="img6.jpg" alt="User avatar">
+        <div>
+          <span class="username">ms.prin</span>
+        </div>
+      </div></a>
+      <div class="engagement">
+        <p>42.9k ❤️ 323 💬</p>
+        <p>ms.prin_fearless walk...</p>
+      </div>
+    </div>
+<div class="post">
+      <img src="img8.jpg" alt="Post image">
+<a href="profile3.html">
+      <div class="info">
+        <img src="img7.jpg" alt="User avatar">
+        <div>
+          <span class="username">ms.prin</span>
+        </div>
+      </div></a>
+      <div class="engagement">
+        <p>42.9k ❤️ 323 💬</p>
+        <p>ms.prin_fearless walk...</p>
+      </div>
+    </div>
+
+    </section>
+</div>
+</section>
+  <div class="footer">
+    <div><a href="home.html">🏠</a></div>
+    <div><a href="explore.html">🔍</a></div>
+    <div><a href="create.html">➕</a></div>
+    <div><a href="like.html">❤️</a></div>
+    <div><a href="profile.html">👤</a></div>
+  </div>
+</div>
+
+</body>
+</html>
